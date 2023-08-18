@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk";
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(135, 160, 182);
+}
+main{
+    width: 580px;
+    height: 60vh;
+    border: 0;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    background-color: white;
+}
+main .result{
+    background: linear-gradient( hsl(252, 100%, 67%),  hsl(241, 81%, 54%) );
+    width: 48%;
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 50px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.result>h4{
+    color: hsl(241, 100%, 89%);
+}
+.result .message{
+    color: hsl(241, 100%, 89%);
+}
+.result .circle{
+    background: linear-gradient(hsla(256, 72%, 46%, 1),   hsl(241, 72%, 46%));
+    width: 150px;
+    height : 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    border-radius: 50%;
+}
+.result p{
+    font-size: 2.2vh;
+}
+.circle h2{
+    font-size: 8vh;
+}
+.circle span{
+    color: hsl(241, 100%, 89%);
+    font-size: 2.25vh;
+}
+.result h3{
+ font-size: 3.5vh;
+}
+main .summary{
+    width: 52%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px 30px;
+}
+ul li{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 15px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    font-size: 12px;
+}
+li .part-1{
+    display: flex;
+    gap: 10px;
+}
+li:nth-child(1){
+    background-color: hsl(0, 80%, 96%);
+}
+li:nth-child(2){
+    background-color: hsl(39, 90%, 96%);
+}
+li:nth-child(3){
+    background-color: hsl(166, 100%, 96%);
+}
+li:nth-child(4){
+    background-color:  hsl(234, 85%, 96%);
+}
+.part-1 #h5-1{
+  color: hsl(0, 100%, 67%);
+}
+.part-1 #h5-2{
+  color:  hsl(39, 100%, 56%);
+}
+.part-1 #h5-3{
+  color: hsl(166, 100%, 37%);
+}
+.part-1 #h5-4{
+  color: hsl(234, 85%, 45%);
+}
+.part-2>span>span{
+  color: black;
+  font-weight: 800;
+}
+.part-2 {
+    color: hsl(0, 0%, 51%);
+}
+#continue{
+    padding: 10px 0px;
+    border-radius: 30px;
+    color: white;
+    background-color:  hsl(224, 30%, 27%);
+    border: 0;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+#continue:hover{
+    background: linear-gradient( hsl(252, 100%, 67%),  hsl(241, 81%, 54%) );
+}
+
+
+@media (max-width: 440px) {
+    main{
+        flex-direction: column;
+        width: 100vw;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        border: none;
+        border-radius: 0px;
+        background-color: white;
+    }
+    .result{
+        min-width: 100%;
+        min-height: 45vh;
+        border: none;
+        border-radius: 0px;
+        justify-content: space-between;
+        overflow: hidden;
+        padding: 0px 0px;
+        gap: 5px;
+    }
+    .result>h4{
+        color: hsl(241, 100%, 89%);
+        font-size: 13px;
+        
+    }
+    .result .message{
+        color: hsl(241, 100%, 89%);
+    }
+    .result .circle{
+        width: 80px;
+        height: 80px;
+    }
+    .result p{
+        font-size: 13px;
+    }
+    .circle h2{
+        font-size: 4vh;
+    }
+    .circle span{
+        color: hsl(241, 100%, 89%);
+        font-size: 2.25vh;
+    }
+    .result h3{
+     font-size: 3.5vh;
+    }
+    .summary{
+        min-height: 55vh;
+        min-width: 100vw;
+        padding: 15px 0;
+    }
+    ul{
+        width: 100%;
+        align-items: center;
+        margin: 4px auto;
+        padding: 15px 0;
+    }
+    #continue{
+        width: 80vw;
+        }
+    li{
+        font-size: 2vw;
+    }
+    .part-2{
+        font-size: 2vmax;
+    }
+}
